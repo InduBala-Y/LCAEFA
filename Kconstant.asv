@@ -1,0 +1,12 @@
+% Drived from the Main paper “AEFA: Artificial Electric Field Algorithm for
+%Global Optimization.” Swarm and Evolutionary Computation, vol. 48, 
+%Elsevier BV, Aug. 2019, pp. 93–108, doi:10.1016/j.swevo.2019.03.013.
+%
+% This function calculates Coulomb constant. eq.13.
+function K=Kconstant(iteration,Max_Iteration)
+%%%here, make your own function of 'G'
+
+ 
+  alfa=30;K0=100;
+   K=K0*exp(-alfa*iteration/Max_Iteration);
+  
